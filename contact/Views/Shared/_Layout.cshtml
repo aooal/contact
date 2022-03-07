@@ -10,29 +10,43 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("應用程式名稱", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        <div class="">
+            <div style="font-size:25pt;">
+                換貨管理
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("首頁", "Index", "Home")</li>
-                    <li>@Html.ActionLink("關於", "About", "Home")</li>
-                    <li>@Html.ActionLink("連絡人", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
+   
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        @*@Html.ActionLink("換貨管理", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+    
+    <div>
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("首頁", "Index", "Home")</li>
+            <li>@Html.ActionLink("關係管理", "About", "Home")</li>
+            <li>@Html.ActionLink("出貨管理", "Contact", "Home")</li>
+            <li>@Html.ActionLink("商品管理", "Contact", "Home")</li>
+            <li>@Html.ActionLink("訂單管理", "Contact", "Home")</li>
+            <li>@Html.ActionLink("活動管理", "Contact", "Home")</li>
+            <li>@Html.ActionLink("退貨管理", "Contact", "Home")</li>
+        </ul>
     </div>
-    <div class="container body-content">
+</div>
+    </div>
+    <div class="">
+        
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 應用程式</p>
+            @*&copy; @DateTime.Now.Year - 我的 ASP.NET 應用程式*@
+            我是 footer<br>
+            footer {
+            color: red;
+            background-color: #DEECD1;
+            padding:20px;
+            }
         </footer>
     </div>
 
